@@ -1,0 +1,39 @@
+{
+    "data": {
+        "data_sign": "Pavia",
+        "data_file": "Pavia_0.2_pc",
+        "patch_size": 15,
+        "serve_patch_size": 15,
+        "batch_size": 256,
+        "num_classes": 9,
+        "pca": -1,
+        "dim_heads": 64,
+        "spectral_size": 103,
+        "random_rotate": true,
+        "noise_type": "clean"
+    },
+    "net": {
+        "trainer": "transformer_DELTA",
+        "use_mask": false,
+        "net_type": "just_pixel",
+        "mlp_head_dim": 64,
+        "depth": 2,
+        "dim": 64,
+        "heads": 20,
+        "mask_pct": 50
+    },
+    "train": {
+        "epochs": 20,
+        "test_epochs": 1,
+        "lr": 0.001,
+        "weight_decay": 0,
+        "temp": 20
+    },
+     "aug": {
+          "type": "SW"
+    },
+
+    "uniq_name": "pavia_0.2trans-ori-epoch10_split",
+    "train_sign": "train",
+    "path_model_save": ""
+}
