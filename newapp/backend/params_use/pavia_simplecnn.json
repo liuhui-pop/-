@@ -1,0 +1,26 @@
+{
+    "uniq_name": "pavia_simplecnn",
+    "train_sign": "train",
+    "data": {
+        "data_sign": "Pavia",
+        "data_file": "PaviaU",
+        "data_path_prefix": "./data",
+        "noise_type": "clean",
+        "num_classes": 9,
+        "patch_size": 13,
+        "spectral_size": 103,
+        "batch_size": 64,
+        "test_ratio": 0.9,
+        "use_saved_pca": false,
+        "use_norm": true,
+        "norm_type": "max_min"
+    },
+    "net": {
+        "trainer": "simple_cnn"
+    },
+    "train": {
+        "epochs": 10,
+        "lr": 0.001,
+        "weight_decay": 0.005
+    }
+}

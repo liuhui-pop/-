@@ -1,0 +1,26 @@
+{
+    "uniq_name": "pavia_vit",
+    "train_sign": "train",
+    "data": {
+        "data_sign": "PaviaU",
+        "noise_type": "clean",
+        "num_classes": 9,
+        "patch_size": 13,
+        "spectral_size": 103,
+        "batch_size": 64,
+        "use_saved_pca": false
+    },
+    "net": {
+        "trainer": "vit",
+        "embed_dim": 64,
+        "num_heads": 4,
+        "depth": 4,
+        "mlp_ratio": 4.0,
+        "dropout": 0.1
+    },
+    "train": {
+        "epochs": 100,
+        "lr": 0.0005,
+        "weight_decay": 0.0001
+    }
+}

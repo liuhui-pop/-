@@ -1,0 +1,84 @@
+{
+    "train_oa": {
+        "type": "index_value",
+        "index": [
+            1,
+            2
+        ],
+        "value": [
+            69.7727697774453,
+            84.34636244623152
+        ]
+    },
+    "train_aa": {
+        "type": "index_value",
+        "index": [
+            1,
+            2
+        ],
+        "value": [
+            51.68877327228739,
+            71.22113237325007
+        ]
+    },
+    "train_kappa": {
+        "type": "index_value",
+        "index": [
+            1,
+            2
+        ],
+        "value": [
+            56.298831907209234,
+            78.96463496204107
+        ]
+    },
+    "eval_time": 102.97377300262451,
+    "param": {
+        "data": {
+            "data_sign": "Pavia",
+            "data_file": "Pavia_0.2_pc",
+            "patch_size": 15,
+            "serve_patch_size": 15,
+            "batch_size": 256,
+            "num_classes": 9,
+            "pca": -1,
+            "dim_heads": 64,
+            "spectral_size": 103,
+            "random_rotate": true,
+            "noise_type": "thick_fog"
+        },
+        "net": {
+            "trainer": "transformer_DELTA",
+            "use_mask": false,
+            "net_type": "just_pixel",
+            "mlp_head_dim": 64,
+            "depth": 2,
+            "dim": 64,
+            "heads": 20,
+            "mask_pct": 50
+        },
+        "train": {
+            "epochs": 20,
+            "test_epochs": 1,
+            "lr": 0.001,
+            "weight_decay": 0,
+            "temp": 20
+        },
+        "aug": {
+            "type": "SW"
+        },
+        "uniq_name": "pavia_0.2trans-ori-epoch10_split",
+        "train_sign": "ctent",
+        "path_model_save": "./save_models/pavia_0.2trans-ori-epoch10_split",
+        "path_res": "./res_base/my new/pavia_0.2trans-ori-epoch10_split_ctent_thick_fog_05141008",
+        "path_pic": "./res_base/my new/pavia_0.2trans-ori-epoch10_split_ctent_thick_fog_05141008.png"
+    },
+    "eval": {
+        "classification": "              precision    recall  f1-score   support\n\n           0     0.5859    0.4257    0.4931      6631\n           1     0.8298    0.9995    0.9068     18649\n           2     0.4903    0.3616    0.4162      2099\n           3     0.9952    0.7396    0.8485      3064\n           4     0.7113    1.0000    0.8313      1345\n           5     0.3332    0.4416    0.3799      5029\n           6     0.0000    0.0000    0.0000      1330\n           7     0.3065    0.2580    0.2802      3682\n           8     0.8000    0.0127    0.0249       947\n\n    accuracy                         0.6783     42776\n   macro avg     0.5614    0.4710    0.4645     42776\nweighted avg     0.6536    0.6783    0.6485     42776\n",
+        "oa": 67.83242939966337,
+        "confusion": "[[ 2823   265   535     0   276  1051     0  1678     3]\n [    0 18640     0     8     0     0     0     1     0]\n [   64     6   759     0   100   770     0   400     0]\n [    0   724     0  2266     2    68     0     4     0]\n [    0     0     0     0  1345     0     0     0     0]\n [    3  2756    47     2     0  2221     0     0     0]\n [ 1073     0   156     0    19    17     0    65     0]\n [    2    71    51     1    69  2538     0   950     0]\n [  853     0     0     0    80     0     0     2    12]]",
+        "each_acc": "[ 42.57276429  99.95174004  36.16007623  73.95561358 100.\n  44.16384967   0.          25.801195     1.26715945]",
+        "aa": 47.0969331397712,
+        "kappa": 55.45070882782418
+    }
+}
