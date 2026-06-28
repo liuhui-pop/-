@@ -1,0 +1,7 @@
+{
+  "trainer_type": "casst",
+  "class_name": "CASST",
+  "label": "CASST",
+  "lr": 0.001,
+  "optimizer": "adam"
+}

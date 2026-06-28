@@ -1,0 +1,7 @@
+{
+  "trainer_type": "ssefn",
+  "class_name": "SSEFN",
+  "label": "SSEFN",
+  "lr": 0.001,
+  "optimizer": "adam"
+}
